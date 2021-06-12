@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA APOD</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov"
+    />
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader hidden">
+      <img src="rocket.svg" alt="Rocket Loading Animation" />
+    </div>
+    <div class="container">
+      <div class="navigation-container">
+        <span class="background"></span>
+        <span class="navigation-items" id="resultsNav">
+          <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
+          <h3>&nbsp;&nbsp;&nbsp;✰&nbsp;&nbsp;&nbsp;</h3>
+          <h3 class="clickable" onclick="getNasaPics()">Load more</h3>
+        </span>
+        <span class="navigation-items hidden" id="favoritesNav">
+          <h3 class="clickable" onclick="getNasaPics()">
+            Load More NASA Images
+          </h3>
+        </span>
+      </div>
+      <!-- images container -->
+      <div class="images-container">
+        <!-- <div class="card">
+          <a href="" title="View Full Image" target="_blank">
+            <img
+              src=""
+              alt="NASA picture of the Day"
+              class="card-img-top"
+            />
+          </a>
+          <div class="card-body">
+            <div class="card-title">Title of Image</div>
+            <p class="clickable">Add to Favorites</p>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non eius
+              eveniet quaerat? Eaque, suscipit. Nobis magni beatae perferendis!
+              Magni totam, laborum asperiores minus officiis optio explicabo ex
+              debitis tempora cupiditate facilis! Temporibus laudantium soluta
+              dolorem officiis inventore earum quidem blanditiis! Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Necessitatibus nam
+              dignissimos accusantium ipsum dolores ea, qui beatae consequuntur,
+              a similique quam, suscipit aut iure illum officia! Nemo et
+              reprehenderit fuga!
+            </p>
+            <small class="text-muted">
+              <strong>12-12-2020</strong>
+              <span>Copyright Info</span>
+            </small>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- save confirmation -->
+    <div class="save-confirmed" hidden>
+      <h1>Added!</h1>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
